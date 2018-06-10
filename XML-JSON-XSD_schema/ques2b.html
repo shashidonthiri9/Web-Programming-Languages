@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border-collapse: collapse;
+  border : 1px solid black;
+  background-color: hsl(16, 100%, 80%);
+}
+
+</style>
+<script type="text/javascript">
+var xmlDoc = document.implementation && document.implementation.createDocument ? document.implementation.createDocument("","doc",null):new ActiveXObject("Microsoft.XMLDOM");
+
+xmlDoc.async = false;
+xmlDoc.load("books_document.xml");
+var x=xmlDoc.getElementsByTagName("book");
+
+
+document.write("<table><thead><tr>");
+document.write("<th colspan='3'> Book Information </th><th> Author Information </th><th colspan='2'> Publisher Information </th></tr><tr>");
+document.write("<th> Booktitle </th>");
+document.write("<th> Cost </th><th> BookPublicationDate </th>");
+document.write("<th> authorName </th>");
+document.write("<th> publishername </th><th> publisheraddress </th>");
+document.write("</tr></thead><tbody>"); 
+
+for (i=0;i<x.length;i++) { 
+  y=x[i].getElementsByTagName("Booktitle")[0].childNodes[0].nodeValue;
+  document.write("<tr><td>"+y);
+  
+  y=x[i].getElementsByTagName("cost")[0].childNodes[0].nodeValue;
+  document.write("</td><td>"+y+" "+x[i].getElementsByTagName("cost")[0].getAttribute("currency"));
+  
+  y=x[i].getElementsByTagName("BookPublicationDate")[0].childNodes[0].nodeValue;
+  document.write("</td><td>"+y);
+  
+  var y=x[i].getElementsByTagName("authorName")[0].childNodes[0].nodeValue;
+  document.write("<td>"+y);
+  
+  y=x[i].getElementsByTagName("publishername")[0].childNodes[0].nodeValue;
+  document.write("</td><td>"+y);
+  
+  y=x[i].getElementsByTagName("streetname")[0].childNodes[0].nodeValue+",</br>"+x[i].getElementsByTagName("zipcode")[0].childNodes[0].nodeValue+" "+x[i].getElementsByTagName("city")[0].childNodes[0].nodeValue+", "+x[i].getElementsByTagName("country")[0].childNodes[0].nodeValue;
+  document.write("</td><td>"+y);
+  
+  document.write("</td></tr>");
+}
+document.write("</tbody></table>");
+</script>
+
+<body>
+</body>
+</html>

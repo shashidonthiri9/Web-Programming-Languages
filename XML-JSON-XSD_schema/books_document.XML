@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="Schema.xsd">
+<book>
+	<publisherinfo>
+		<publishername>Publisher B</publishername>
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+	<bookinformation>
+			<Booktitle>Booka</Booktitle>
+			<cost currency="USD">30.00</cost>
+	<BookPublicationDate>2011-09-10</BookPublicationDate>
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authora</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher C </publishername>		
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookb</Booktitle>
+			<cost currency="USD">35.00</cost>
+	<BookPublicationDate>2012-09-09</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>AuthorC</authorName>
+	</authorinfo>
+</book>
+
+
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher D</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookc</Booktitle>
+			<cost currency="USD">40.00</cost>
+	<BookPublicationDate>2010-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorc</authorName>
+	</authorinfo>
+</book>
+
+
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher E</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookd</Booktitle>
+			<cost currency="USD">45.00</cost>
+	<BookPublicationDate>2009-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authord</authorName>
+	</authorinfo>
+</book>
+
+
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher A</publishername>
+		
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Booke</Booktitle>
+			<cost currency="USD">26.00</cost>
+	<BookPublicationDate>2008-09-10</BookPublicationDate>
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authore</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher F</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookf</Booktitle>
+			<cost currency="USD">50.00</cost>
+	<BookPublicationDate>2007-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorf</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher A</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookg</Booktitle>
+			<cost currency="USD">55.00</cost>
+	<BookPublicationDate>2007-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorg</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher B</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookh</Booktitle>
+			<cost currency="USD">60.00</cost>
+	<BookPublicationDate>2014-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorh</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher C</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Booki</Booktitle>
+			<cost currency="USD">65.00</cost>
+	<BookPublicationDate>2013-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authori</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher B</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookj</Booktitle>
+			<cost currency="USD">70.00</cost>
+	<BookPublicationDate>2012-09-10</BookPublicationDate>
+	
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorj</authorName>
+	</authorinfo>
+
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher A</publishername>
+		
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookk</Booktitle>
+			<cost currency="USD">75.00</cost>
+	<BookPublicationDate>2006-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authork</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher B</publishername>
+		
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookl</Booktitle>
+			<cost currency="USD">80.00</cost>
+	<BookPublicationDate>2012-09-01</BookPublicationDate>
+	
+
+	</bookinformation>
+<authorinfo>
+		<authorName>Authorl</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher C</publishername>
+		
+		<publisheraddress>
+					<streetname>7825 McCallum_Blvd</streetname>
+					<zipcode>75252</zipcode>
+					<city>Dallas</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookm</Booktitle>
+			<cost currency="USD">85.00</cost>
+	<BookPublicationDate>2012-09-02</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorm</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher D</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookn</Booktitle>
+			<cost currency="USD">86.00</cost>
+	<BookPublicationDate>2005-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorn</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher D</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Booko</Booktitle>
+			<cost currency="USD">90.00</cost>
+	<BookPublicationDate>2007-09-09</BookPublicationDate>
+	
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authoro</authorName>
+	</authorinfo>
+
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher G</publishername>
+		
+		<publisheraddress>
+					<streetname>6600 Indiana_Road</streetname>
+					<zipcode>65252</zipcode>
+					<city>NYC</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookp</Booktitle>
+			<cost currency="USD">96.00</cost>
+	<BookPublicationDate>2007-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorp</authorName>
+	</authorinfo>
+</book>
+
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher C</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookq</Booktitle>
+			<cost currency="USD">28.00</cost>
+	<BookPublicationDate>2002-09-10</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorq</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher B</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookr</Booktitle>
+			<cost currency="USD">27.00</cost>
+	<BookPublicationDate>2012-09-03</BookPublicationDate>
+	
+
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authorr</authorName>
+	</authorinfo>
+</book>
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher C</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Books</Booktitle>
+			<cost currency="USD">29.00</cost>
+	<BookPublicationDate>2012-09-04</BookPublicationDate>
+	
+	</bookinformation>
+	<authorinfo>
+		<authorName>Authors</authorName>
+	</authorinfo>
+
+</book>
+
+
+<book>
+	<publisherinfo>
+		<publishername>Publisher D</publishername>
+		
+		<publisheraddress>
+					<streetname>7700 Chicago_Street</streetname>
+					<zipcode>55252</zipcode>
+					<city>Chicago</city>
+					<country>USA</country>
+		</publisheraddress>
+	</publisherinfo>
+
+	<bookinformation>
+			<Booktitle>Bookt</Booktitle>
+			<cost currency="USD">24.99</cost>
+	<BookPublicationDate>2012-10-10</BookPublicationDate>
+	
+
+	</bookinformation>
+
+	<authorinfo>
+		<authorName>Authort</authorName>
+	</authorinfo>
+</book>
+
+
+
+</root>

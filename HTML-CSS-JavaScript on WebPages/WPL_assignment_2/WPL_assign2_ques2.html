@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sashidhar Donthiri WPL assignment_2 ques2</title>
+		<style type="text/css">
+		    #outerbox{
+				margin-top:20px;
+			}
+			#outerbox table{
+				width:85%;
+				margin: 0 auto;
+				text-align:left;	
+			}
+			table,th,td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+			#outerbox table thead th{
+				padding:5px;
+			}
+			#outerbox table tbody tr:first-child{
+				background-color:lightgrey;
+			}
+			#outerbox table tbody tr td:first-child{
+				padding:5px;
+			}
+			#row_width{
+				width:40%;
+			}
+			#row_width2{
+				width:60%;
+			}
+			.example_row1 #yellow_insidebox{
+				border: 2px solid black;
+				width: 70%;
+			    margin: 0 auto;
+				padding-bottom: 10px;
+				margin-top:5px;
+			}
+			.example_row1 #yellow_insidebox h6{
+	 			margin: 13px 10px 0px 10px;
+			}
+			.example_row1 #yellow_insidebox div{
+				background-color:yellow;
+				border: 2px solid black;
+				width: 60%;
+				margin: 0 20%;
+				padding:15px;	
+			}	
+			#with_333{
+				margin: 0px 0px 5px 5px;
+			}
+			#with_333 span{
+				border:2px dashed black;
+			}
+			.example_row2{
+				margin: 10px auto 10px auto;
+				width:70%;
+				margin: 5 auto;
+				border: 2px solid black;
+				padding:10px 0;				
+			}
+			.example_row2 table td{
+				padding: 11px;
+				border: 2px solid black;
+			}
+			.example_row2 table{
+				text-align:left;
+				margin: 0px 10px;
+			}
+			.example_row2 table th{
+				padding-left:5px;
+			}
+			.example_row2 table{
+				border:none;
+			}
+			#with_4444{
+				width:80%;
+				background-color:yellow;
+			}
+		    #with_55555{
+				padding-left:0px;
+				background-color:white;
+			}
+			#empty_box{
+				border: none;
+				width: 30%;
+			}
+			#with_666666{
+				border-top-width:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='outerbox'>
+			<table>
+				<thead>
+					<tr>
+						<th>
+							Example HTML/CSS Structure
+						</th>
+						<th>
+							Stucture
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="row_width">
+							Example 1
+						</td>
+						<td id="row_width2">
+							<div class="example_row1">
+								<div id='yellow_insidebox'>
+									<p>Html 1</p>
+									<div><u>2 2</u></div>
+								</div>
+								<div id="with_333">
+									<span>3 3 3</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td id="row_width">
+							<div>Example 2</div>
+						</td>
+						<td id="row_width2">
+							<div class="example_row2">
+								<table id="secondtable">
+									<tbody >
+										<tr>
+											<td colspan="5" id="with_4444">4 4 4 4</td>
+											<td colspan="1" id="with_55555">5 5 5 5 5</td>							
+										</tr>
+										<tr>
+											<td colspan="1" id="empty_box"></td>
+											<td colspan="5" id="with_666666">6 6 6 6 6 6 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	    </div>
+	</body>
+</html>

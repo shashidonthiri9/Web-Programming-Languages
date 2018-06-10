@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Booktitle">
+<xs:simpleType>
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-Z].*" />
+    </xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="authorName"  >
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z].*"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+			
+
+<xs:element name="cost">
+<xs:complexType>
+	<xs:simpleContent>
+	<xs:extension base="xs:decimal">
+		<xs:attribute name="currency" type="currencyType"/>
+	</xs:extension>
+	</xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="currencyType">
+	  <xs:restriction base="xs:string">
+	    <xs:enumeration value="USD"/>
+	     </xs:restriction>
+	</xs:simpleType>
+
+
+<xs:element name = "BookPublicationDate" type="xs:date"/> 
+
+
+<xs:element name="publishername">
+<xs:simpleType>
+	<xs:restriction base="xs:string">
+        <xs:pattern value="[A-Z].*" />
+    </xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="streetname">
+<xs:simpleType>
+	 <xs:restriction base="xs:string">
+ 		<xs:pattern value="[0-9]+ [a-zA-Z]+_[A-Za-z]*"/>
+ 	</xs:restriction>
+ </xs:simpleType>
+</xs:element>
+
+<xs:element name="zipcode">
+	<xs:simpleType>
+	<xs:restriction base="xs:positiveInteger">
+		<xs:minInclusive value='11111'/>
+		<xs:maxInclusive value='99999'/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="city">
+<xs:simpleType>
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z].*"/>
+	</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+
+<xs:element  name="country">
+<xs:simpleType>
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z]+"/>
+	</xs:restriction> 
+</xs:simpleType>
+</xs:element>
+
+
+<xs:element name="publisheraddress">
+	<xs:complexType>
+	<xs:sequence>
+		<xs:element ref="streetname"> </xs:element>
+		<xs:element ref="zipcode"> </xs:element>
+		<xs:element ref="city"> </xs:element>
+		<xs:element ref="country"> </xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+
+<xs:element name="authorinfo" >
+	<xs:complexType>
+	<xs:all>
+		<xs:element ref="authorName" minOccurs="1"> </xs:element>  
+	</xs:all>
+	</xs:complexType>    
+</xs:element>
+
+
+
+
+<xs:element name="bookinformation">
+			<xs:complexType>
+			<xs:all>
+				<xs:element ref="Booktitle" > </xs:element>
+				<xs:element ref="cost" > </xs:element>
+				<xs:element ref="BookPublicationDate" > </xs:element>
+			</xs:all>
+			</xs:complexType>			
+</xs:element>
+
+
+<xs:element name="publisherinfo">
+	<xs:complexType>
+	<xs:sequence>
+		<xs:element ref="publishername"> </xs:element>
+		<xs:element ref="publisheraddress"> </xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+<xs:element name="book">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref="publisherinfo"> </xs:element>
+			<xs:element ref="bookinformation"> </xs:element>
+			<xs:element ref= "authorinfo"></xs:element>
+		</xs:all>
+ 	</xs:complexType>
+ </xs:element>
+
+
+<xs:element name="root">
+			<xs:complexType>
+				<xs:sequence maxOccurs="unbounded">
+					<xs:element ref="book"> </xs:element>
+				</xs:sequence>
+			</xs:complexType>
+</xs:element>
+
+</xs:schema>

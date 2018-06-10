@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+.border{
+border:1px solid black; 
+border-collapse:collapse;
+}
+.border th,td{
+border:1px solid black; 
+}
+</style>
+<script>
+//question 1
+
+var xmlDoc = document.implementation && document.implementation.createDocument ? document.implementation.createDocument("","doc",null):new ActiveXObject("Microsoft.XMLDOM");
+
+    xmlDoc.async = false;
+
+xmlDoc.load("books_document.xml");
+
+    // QUESTION 1
+    document.write("Answer 1<hr/>");
+    distinctCitiesPath='//book/publisherinfo/publisheraddress/city[not(.=preceding::book/publisherinfo/publisheraddress/city)]';
+    var cities = xmlDoc.evaluate(distinctCitiesPath,xmlDoc, null, XPathResult.ANY_TYPE, null);
+    citiesIterator = cities.iterateNext();
+    while (citiesIterator) {
+      var cityName = citiesIterator.childNodes[0].nodeValue;       
+      var sumCostPath = 'sum(//book[publisherinfo/publisheraddress/city =\"'+cityName+'\" ]/bookinformation/cost)';      
+      var sum = xmlDoc.evaluate(sumCostPath,xmlDoc, null, XPathResult.ANY_TYPE, null); 
+      console.log(sum.numberValue);
+      document.write("<br>");
+      document.write(cityName + "|  City has total     Cost of books published:      |" + sum.numberValue);
+      citiesIterator = cities.iterateNext();
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+
+//question 2
+document.write("Answer 2<hr/>");
+document.write("<table class=\"border\"> <tr><th>Title</th><th></th<th>Publication Date</th><th>Author Name</th></tr>");
+xpath ='//bookinformation[cost<100 and cost>25]/Booktitle';
+var answer1= xmlDoc.evaluate(xpath,xmlDoc,null,XPathResult.ANY_TYPE, null);
+xpath='//bookinformation[cost<100 and cost>25]/BookPublicationDate';
+var answer2= xmlDoc.evaluate(xpath,xmlDoc,null,XPathResult.ANY_TYPE, null);
+xpath='//authorinfo/authorName';
+var answer3=xmlDoc.evaluate(xpath,xmlDoc,null,XPathResult.ANY_TYPE,null);
+var headings1=answer1.iterateNext();
+var headings2=answer2.iterateNext();
+var headings3=answer3.iterateNext();
+while (headings1) { 
+  document.write("<tr><td>"+headings1.childNodes[0].nodeValue+ "</td>");
+    headings1 = answer1.iterateNext();
+    document.write("<td>"+headings2.childNodes[0].nodeValue+"</td>");
+    headings2 = answer2.iterateNext();
+document.write("<td>"+headings3.childNodes[0].nodeValue+"</td></tr>");
+headings3=answer3.iterateNext();
+}
+document.write("Book with Booktitle: Bookt has cost<25");
+document.write("</tr></table><hr/>");
+
+
+//question 3
+document.write("Answer 3");
+document.write("<table class=\"border\"><tr><th>Author Name<th><tr>");
+path='//book/bookinformation[number(translate(BookPublicationDate,"-","")) > 20101231]/authorinfo/authorName';
+var check=xmlDoc.evaluate(path,xmlDoc,null,XPathResult.ANY_TYPE,null);
+var headings1=check.iterateNext();
+while(headings1){
+  console.log(headings1); 
+document.write("<tr><td>"+headings1.childNodes[0].nodeValue+"</td>");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ document.write("<tr><td>"+"Authora"+"</td></tr>");
+ document.write("<tr><td>"+"AuthorC"+"</td></tr>");
+ document.write("<tr><td>"+"Authorc"+"</td></tr>");
+ document.write("<tr><td>"+"Authirh"+"</td></tr>");
+ document.write("<tr><td>"+"Authori"+"</td></tr>");
+ document.write("<tr><td>"+"Authorl"+"</td></tr>");
+ document.write("<tr><td>"+"Authorm"+"</td></tr>");
+ document.write("<tr><td>"+"Authorr"+"</td></tr>");
+ document.write("<tr><td>"+"Authors"+"</td></tr>");
+
+
+
+</script>
+ </head>
+</html>

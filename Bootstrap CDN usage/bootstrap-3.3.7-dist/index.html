@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sashidhar Donthiri WPL_assign_3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+  table
+  {
+    width=100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  table th, td{
+border: 1px solid #cdcdcd;
+  }
+  table th,table td{
+    padding: 5px;
+    text-align:left;
+  }
+</style>
+
+
+<style>
+  #onmouseenterthis{
+    border:  2px solid blue;
+    padding: 20px;
+    height:  80px;
+  }
+</style>
+
+<style>
+td.highlight{
+  background-color:blue;
+  color: red;
+}
+</style>
+
+</script>
+
+<script>
+  $(document).ready(function () {
+    var counter = 0;
+
+    $("#addrow").on("click", function () {
+        var newRow = $("<tr>");
+        var cols = "";
+        cols += '<td><input type="text" class="form-control" name="firstname' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="secondname' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="email' + counter + '"/></td>';
+        cols += '<td><input type="text" class="form-control" name="phonenumber' + counter + '"/></td>';
+        cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+        newRow.append(cols);
+        $("table.order-list").append(newRow);
+        counter++;
+    });
+    
+    $("table.order-list").on("click", ".ibtnDel", function (event) {
+        $(this).closest("tr").remove();       
+        counter -= 1
+    });
+
+});
+
+function calculateRow(row) {
+    var price = +row.find('input[name^="price"]').val();
+   // var rowid= 'price';
+}
+$(document).ready(function () {     
+          $(document).on('mouseover','tbody tr td',function(){
+          element=$(this);
+                  if(event.altKey) {
+                element.css("background-color","blue").css("color","red");
+              }            
+        });
+        $(document).on('mouseleave','tbody tr td',function(){   
+                element.css("background-color","black").css("color","black");                  
+        });
+     });
+
+$('table.order-list td').each(function(){
+var rowid=$(this).find(td)
+});
+function calculateGrandTotal() {
+    var grandTotal = 0;
+    $("table.order-list").find('input[name^="price"]').each(function () {
+        grandTotal += +$(this).val();
+    });
+    $("#grandtotal").text(grandTotal.toFixed(2));
+}
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".fadeTo").dblclick(function(){
+      $(".table_bg").fadeTo(2000,0.4);
+    });
+  });
+</script>
+<script>
+$(document).ready(function(){
+$(".fadeToggle").dblclick(function(){
+$(".table_bg").fadeTo(2000,0.4);
+});
+}); 
+</script>
+
+<script>
+$(document).ready(function(){
+$(".fadeOuttab").dblclick(function(){
+$(".table_bg").fadeOut(2000, function(){
+    // alert ("The Table disappeared completely!")
+});
+});
+$(".fadeIntab").dblclick(function(){
+$(".table_bg").fadeIn(3000, function(){
+    // alert ("The Table is visible!")
+  });
+    });
+      }); 
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+   $("<td><input type="text" class="form-control" name="firstname' + counter + '"/></td>")
+  });
+</script>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("#homepages");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+<script>
+  $(function(){
+     setInterval(function(){
+$('#abovelogo').fadeIn(1500).delay(500).fadeOut(1500).delay(500).fadeIn(1500).fadeTo(1500,0.4).delay(500).fadeIn(1500).fadeToggle(2000);
+},8000);
+     });
+</script>
+
+<script>
+$(document).ready(function(){
+$(".fadeToggle").dblclick(function(){
+$(".table_bg").fadeToggle(2000);
+});
+});
+</script>
+
+<style>
+.table_bg {
+  width:20%;
+  font-family:verdana;
+  font-size:10px;  
+  color:#fff;
+  padding: 8px;
+  text-align:center;
+}
+.table_bg th{
+    background: #4A6F87;
+    color: #fff;
+    line-height:25px;
+  }
+.table_bg td{
+    background: #C8D7E1;    
+    padding:8px;
+    color: #000;
+  }  
+</style>
+<style>
+p{
+font-size:120%;
+cursor:pointer;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+$("button").dblclick(function(){
+  $("p").fadeTo(1000,.4);
+});
+  });
+</script>
+
+<script src="https://code.jQuery.com/jQuery-1.10.2.js">
+  
+</script>
+  <style> #homepages {
+    width: 20px;
+    height: 20px;
+    padding: 1px 0;
+    text-align: center;
+    background-color: green;
+    margin-top: 1px;
+}
+<style>
+/*body{
+  background-image: url("images/background.jpg");
+}
+*/body{
+  background-color: red;
+}
+</style>
+
+
+<script type="text/javascript">
+function hide(which){
+if (!document.getElementById)
+return
+if (which.style.display=="block")
+which.style.display="none"
+}
+</script>
+
+
+
+<style> 
+body{
+  position: relative;
+}
+#Home {padding-top:50px; height:1000px; color:#fff; background-color: red; }
+#ECS {padding-top:50px; height:1000px; color:#fff; background-color: #673ab7; }
+#JSOM {padding-top:50px; height:1000px; color:#fff; background-color: #ff9800;}
+#SA{padding-top:50px; height:1000px; color:#fff; background-color: #00bcd4;}
+#SHS{padding-top:50px; height:1000px; color:#fff; background-color: #009688;}
+#Contactus{padding-top:50px; height:1000px; color:#fff; background-color: #000000;}
+</style>
+</head>
+
+
+<body data-spy ="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class= "navbar-toggle" data-toggle="collapse" data-target ="$myNavbar">
+        <span class= "icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>UTDallas </strong></a>
+    </div>
+      <div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="https://engineering.utdallas.edu/" target="_blank">Eric Jonson School Of Engg.</a></li>
+      <li><a href="http://jindal.utdallas.edu/"  target="_blank">Jindal School of ManagementStudies </a></li>
+      <li><a href="http://www.utdallas.edu/atec/"  target="_blank">School of Arts</a></li>
+      <li><a href="http://www.utdallas.edu/ah/"  target="_blank">School of Humanities and Sciences</a></li>
+      <li><a href="#Contactus">Contact Us:</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">UTD Schools <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#Home">HomePage</a></li>
+              <li><a href="#ECS">ECS Page</a></li>
+              <li><a href="#JSOM">JSOM_Page</a></li>
+              <li><a href="#SA">SA Page</a></li>
+              <li><a href="#SHS">SHS Page</a></li>
+              <li><a href="#Contactus">Contact Us Page</a></li>
+            </ul>
+          </li>
+        
+    </ul>
+  </div>
+</div>
+</div>
+</nav>
+
+<div id="Home" class="container-fluid">
+  <p></p>
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target= "#myCarousel" data-slide-to="3"> </li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="https://engineering.utdallas.edu/" target="_blank"> <img class="center-block" src = "images/ECS_.jpg" alt= "Eric Jonson School of Engineering" width ="900" height="800"></a>
+      </div>
+      <div class="item">
+        <a href= "http://jindal.utdallas.edu/"  target="_blank"> <img class="center-block" src="images/JSOM.jpg" alt= "Naveen Jindal school of Management Sciences" width ="850" height="880"> </a>
+        </div>
+      <div class="item">
+     <a href = "http://www.utdallas.edu/atec/"  target="_blank"> <img class="center-block" src= "images/ATEC.jpg" alt= "School of arts" width ="850" height="880" 
+      ></a>
+     </div>
+      <div class="item">
+     <a href = "http://www.utdallas.edu/ah/"  target="_blank"> <img class="center-block" src= "images/AH.jpg" alt= "School of Humanities and Sciences" width ="860" height="880"> </a>
+     </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  </div> 
+<div id="#homepages" class="container-fluid" background-color="red"><h3><strong><kbd>Advantages of Resposive Web design</kbd></strong></h3> 
+<p> <u>Responsive Web Design (RWD)</u> is an approach of laying-out and coding a website such that the website provides an optimal viewing experience — ease of reading and navigation with a minimum of resizing, panning, and scrolling — across a wide range of devices (from desktop computer monitors to mobile phones).</p>
+<ul> 
+  <li>Your content is flexible enough to move seamlessly from one screen to the next with responsive design</li>
+  <li>When you have a separate website for desktop and mobile, you also need two separate content strategies which isn't necessary in RWD</li>
+  <li>Responsive websites promotes strong link building as it helps users get to the location you want them to. </li>
+  <li>Bootstrap is a front-end framework that builds responsive, mobile-first websites. With a mobile-first approach at its core, its grid system forces designers to create sites for small screens, then scale designs up from there. It uses a mix of HTML5 markup, compiled and minified CSS styling, fonts, and JavaScript also jQuery for JavaScript plugins (like modals, tooltips, etc)</li>
+</ul>
+
+
+<!--KEY PRESS-->
+<div id="keypress" class="container">
+  <p>Key Press</p>
+  <p>b_iii_5 enter in text area to observe keypress event with fade</p>
+    <textarea id="keypressarea"></textarea>
+  <br>
+</div>
+
+<!--KEY DOWN-->
+
+
+<div id="keydown" class="container">
+  <p>KeyDown</p>
+  <p>b_iiit_6 enter in text area to observe keypress event with fade</p>
+    <textarea id="keydownarea"></textarea>
+  <br>
+</div>
+
+<script>
+$("#keypressarea").keypress(function(){
+      $("#keypressarea").css("color","white").fadeTo("5000",0.4).fadeOut("5000").fadeIn("5000").fadeOut("5000").fadeIn("5000");
+    });
+    $("#keydownarea").keydown(function(){
+      $("#keydownarea").css("color","white").animate({width:200},3000).animate({height:500},3000).animate({borderWidth:50},3000).animate({width:1000},3000);
+    });
+</script>
+
+
+<!-- MOUSE ENTER and MOUSE LEAVE SECTION -->
+<!-- MOUSE ENTER and MOUSE LEAVE SECTION -->
+<div id="mouse_enter">
+  <div class="container">
+    <h3 class="text-center" >b_iii_3AND4 Mouse Enter and Mouse Leave</h3>
+    <div class="row" id="onmouseenterthis">      
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+$("#onmouseenterthis").mouseenter(function(){
+      $("#onmouseenterthis").animate({
+          height:"200px",
+        borderWidth: "10px"
+//        background-color: "green"
+      }
+      ,5000,function(){
+        alert("Animation Completed");
+        $("#onmouseenterthis").css("height","80px");
+        $("#onmouseenterthis").css("borderWidth", "2px");
+
+      });
+
+    });
+    $("#onmouseenterthis").mouseleave(function(){
+      $("#onmouseenterthis").stop();      
+      alert("Done");
+    });
+</script>
+
+
+</div>
+<button> Double Click this to implement fadeto on any paragraph tagged element </button>
+<button onclick="myFunction()" background-color="red">(b_iii_1)SHOW/HIDE toggle</button>
+<p></p>
+<p>
+<button class="fadeIntab" background-color="red">(b_iii_2)fadeIn HTML Table</button> <br> <br>
+<button class="fadeOuttab">(b_iii_2)fadeOut HTML Table</button> <br> <br>
+</p>
+
+
+<!-- 
+<p id="abovelogo" background-color="red">THIS RESEMBLES ACTIVITY FOR CHAIN OF 3 FADING EVENTS ,here...FADEIN FADEOUT FADETO </P> -->
+<strong>STOP EFFECTS</strong>
+<p>
+<button class="fadeToggle" background-color="red">(b_iii_2)Show/Hide Table by fadeToggle</button>
+</p>
+
+ <!-- <p> <button class="fadeTo" background-color="red">(b_iii_2)Execute fadeTo method</button> </p> -->
+<table class="table_bg">
+    <tr>
+     <th>Name</th>
+     <th>Age</th>
+     <th>Salary</th>
+    </tr>
+    <tr>
+     <td>Adams</td>
+     <td>31</td>
+     <td>$4000.00</td>
+    </tr>        
+</table>
+
+
+<p id="HIDE_ELEMENT" style="font:30px bold; display: block"><kbd>(b_iii_1)This content will be hidden on CLICKING HIDE_ELEMENT</kbd></p>
+<a href="javascript:hide(document.getElementById('HIDE_ELEMENT'))">HIDE_ELEMENT</a>
+
+<div id="ECS" class="container-fluid">
+  <h1>Eric Jonson School of Engg.</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="JSOM" class="container-fluid">
+  <h1>Naveen Jindal School of Management</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="SA" class="container-fluid">
+  <h1>School of Arts</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="SHS" class="container-fluid">
+  <h1>School of Humanities and Sciences</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="Contactus" class="container-fluid">
+  <h1>Contact us TABLE</h1>
+  <div class="container" id="Contactus">
+    <table id="myTable" class=" table order-list">
+    <thead>
+        <tr>
+            <td>First Name</td>
+            <td>Second Name</td>
+            <td>Email Address</td>
+            <td>Phone number</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="col-sm-2">
+                <input type="text" name="firstname" class="form-control" />
+            </td>
+            <td class="col-sm-2">
+                <input type="mail" name="secondname"  class="form-control"/>
+            </td>
+            <td class="col-sm-3">
+                <input type="text" name="email"  class="form-control"/>
+            </td>
+<td class="col-sm-2">
+  <input type="text" name="phonenumber" class="form-control"/>
+</td>
+            <td class="col-sm-2"><a class="deleteRow"></a>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5" style="text-align: left;">
+                <input type="button" class="btn btn-lg btn-block " id="addrow" value="Add Row" />
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </tfoot>
+</table>
+</div>
+</div>
+
+</body>
+</html>
